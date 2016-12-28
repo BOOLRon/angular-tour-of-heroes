@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
-import { RooterModule, Routes } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
 
 import { DashboardComponent } from './dashboard.component';
-import { HeroesComponent } from './heros.component';
+import { HeroesComponent } from './heroes.component';
 import { HeroDetailComponent } from './hero-detail.component';
 
 const routes: Routes = [
@@ -14,7 +14,7 @@ const routes: Routes = [
 
 @NgModule({
     imports: [ RouterModule.forRoot(routes)],
-    exports: [ RooterModule ]
+    exports: [ RouterModule ]
 })
 
 export class AppRoutingModule {}
